@@ -1,0 +1,778 @@
+<html>
+    <head>
+        <title>Quote Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="center">
+        <h1>SendCargo.co - Quote Calculator</h1>
+        </div>
+        <hr>
+        <!-- ============================================ -->
+        <form>
+            <input class="red" type="reset" value="Reset">
+            <select  class="yellow" id="gbprate">
+                <option value="115.9">£1=Tk.115.9</option>
+                <option value="114.9">£1=Tk.114.9</option>
+                <option value="118">£1=Tk.118</option>
+                <option value="115">£1=Tk.115</option>
+                <option value="120">£1=Tk.120</option>
+            </select>
+            <hr>
+            <div class="col-md-12 center">
+                <div class="col-md-6">
+                    Link01: <input type="text" id="link1" autofocus placeholder="Paste the 1st link here"> 
+                    Qty<input type="number" id="qty1" value="1">
+                    £<input type="number" id="price1" placeholder="Price?">
+                    <input type="number" id="pos1" placeholder="Postage?">
+                    <select id="tax1">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size1" placeholder="Size or Comment">    <input type="text" id="color1" placeholder="Color or comment">
+                    <br><br>
+                    Link02: <input type="text" id="link2">  
+                    Qty<input type="number" id="qty2" value="1">
+                    £<input type="number" id="price2" placeholder="Price?">
+                    <input type="number" id="pos2" placeholder="Postage?">
+                    <select id="tax2">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size2" placeholder="Size or Comment">    <input type="text" id="color2" placeholder="Color or comment">
+                    <br><br>
+                    Link03: <input type="text" id="link3">  
+                    Qty<input type="number" id="qty3" value="1">
+                    £<input type="number" id="price3" placeholder="Price?">
+                    <input type="number" id="pos3" placeholder="Postage?">
+                    <select id="tax3">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size3" placeholder="Size or Comment"> <input type="text" id="color3" placeholder="Color or comment">
+                    <br><br>
+                    Link04: <input type="text" id="link4">  
+                    Qty<input type="number" id="qty4" value="1">
+                    £<input type="number" id="price4" placeholder="Price?">
+                    <input type="number" id="pos4" placeholder="Postage?">
+                    <select id="tax4">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size4" placeholder="Size or Comment"> <input type="text" id="color4" placeholder="Color or comment">
+                    <br><br>
+                    Link05: <input type="text" id="link5">  
+                    Qty<input type="number" id="qty5" value="1">
+                    £<input type="number" id="price5" placeholder="Price?">
+                    <input type="number" id="pos5" placeholder="Postage?">
+                    <select id="tax5">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size5" placeholder="Size or Comment"> <input type="text" id="color5" placeholder="Color or comment">
+                    <br><br>           
+                </div>
+                <div class="col-md-6">
+                    Link06: <input type="text" id="link6"> 
+                    Qty<input type="number" id="qty6" value="1"> 
+                    £<input type="number" id="price6" placeholder="Price?">
+                    <input type="number" id="pos6" placeholder="Postage?">
+                    <select id="tax6">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size6" placeholder="Size or Comment"> <input type="text" id="color6" placeholder="Color or comment">
+                    <br><br>
+                    Link07: <input type="text" id="link7">  
+                    Qty<input type="number" id="qty7" value="1">
+                    £<input type="number" id="price7" placeholder="Price?">
+                    <input type="number" id="pos7" placeholder="Postage?">
+                    <select id="tax7">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size7" placeholder="Size or Comment"> <input type="text" id="color7" placeholder="Color or comment">
+                    <br><br>
+                    Link08: <input type="text" id="link8">  
+                    Qty<input type="number" id="qty8" value="1">
+                    £<input type="number" id="price8" placeholder="Price?">
+                    <input type="number" id="pos8" placeholder="Postage?">
+                    <select id="tax8">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size8" placeholder="Size or Comment"> <input type="text" id="color8" placeholder="Color or comment">
+                    <br><br>
+                    Link09: <input type="text" id="link9">  
+                    Qty<input type="number" id="qty9" value="1">
+                    £<input type="number" id="price9" placeholder="Price?">
+                    <input type="number" id="pos9" placeholder="Postage?">
+                    <select id="tax9">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size9" placeholder="Size or Comment"> <input type="text" id="color9" placeholder="Color or comment">
+                    <br><br>
+                    Link10: <input type="text" id="link10">  
+                    Qty<input type="number" id="qty10" value="1">
+                    £<input type="number" id="price10" placeholder="Price?">
+                    <input type="number" id="pos10" placeholder="Postage?">
+                    <select id="tax10">
+                        <option value="0">Tax 0%</option>
+                        <option value="0.15">Tax 15%</option>
+                        <option value="2500">Tax Tk.2500</option>
+                        <option value="3000">Tax Tk.3000</option>
+                        <option value="5000">Tax Tk.5000</option>
+                        <option value="10000">Tax Tk.10000</option>
+                        <option value="8000">TV below 30"</option>
+                        <option value="10000">TV 30"-36"</option>
+                        <option value="20000">TV 37"-42"</option>
+                        <option value="30000">TV 43"-46"</option>
+                        <option value="50000">TV 47"-52"</option>
+                        <option value="70000">TV 53"-65"</option>
+                        <option value="90000">TV 65" to Up</option>
+                    </select>
+                    <br>
+                    <input type="text" id="size10" placeholder="Size or Comment"> <input type="text" id="color10" placeholder="Color or comment">
+                    <br><br>
+                </div>
+            </div>
+            </form>
+        <div class="center">
+            <button onclick="myFunction()">Get Quote</button>
+            <textarea cols="180" id="print"></textarea>
+        </div>
+        <!-- ============================================ -->
+        
+        
+        <br>
+        <p class="center">2019 - All Rights Reserved by Shuvo</p>
+
+        <script>
+            
+            function myFunction() {
+                var prate = document.getElementById("gbprate").value;
+                var l1 = document.getElementById("link1").value;
+                 if(l1!=""){
+                   var l1s = "Link1: ";
+                   var l1r = l1s.concat(l1);
+                   
+                     // first link price ============================================================
+                        var p1 = document.getElementById("price1").value;
+                        var qty1 = document.getElementById("qty1").value;
+                         if(p1!=""){
+                             if(p1==0){
+                                var p1r = "We can't get it!";
+                             }else{
+                           var p1s = "Price: £";
+                           var p1r = p1s.concat(p1);
+                             }
+                        }else{
+                            p1r="Price Not given";
+                        }
+                     //link 1 tax taking
+                     var tax1 = document.getElementById("tax1").value;
+                     var tax;
+                     if(tax1!=""){
+                        if(tax1==0.15){
+                            var taxcatch = p1*0.15*qty1*prate;
+                            var tax = taxcatch.toFixed(2);
+                        }else{
+                            var tax = tax1;
+                        }
+                     }
+                     //take postage 1
+                     var posprint1 = "";
+                     var pos1 = document.getElementById("pos1").value;
+                     if(pos1!=""){
+                        var posprint1 = "\nPostage: £" + pos1;
+                     }
+                     var size1 = document.getElementById("size1").value;
+                     if(size1 != ""){ var sizeprint1 = "\n" + size1; }else { var sizeprint1 = "" }
+                     var color1 = document.getElementById("color1").value;
+                     if(color1 != ""){ var colorprint1 = "\n" + color1; }else { var colorprint1 = "" }
+                     var subtotalcatch = (+p1 * +qty1) + +pos1; 
+                     var subtotal = subtotalcatch.toFixed(2);
+                     var subtkcatch = subtotal*prate;
+                     var subtk = subtkcatch.toFixed(2);
+                     var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                     
+                     // link 2 taking=============================================================================================
+                        var l2 = document.getElementById("link2").value;
+                     
+                        var qty2 = document.getElementById("qty2").value;
+                         if(l2!=""){
+                            var l2s = "Link2: ";
+                            var l2r = l2s.concat(l2);
+                         
+                             // link 2 link price
+                                var p2 = document.getElementById("price2").value;
+                                 if(p2!=""){
+                                     if(p2==0){
+                                        var p2r = "We can't get it!";
+                                     }else{
+                                   var p2s = "Price: £";
+                                   var p2r = p2s.concat(p2);
+                                     }
+                                }else{
+                                   var p2r="Price Not given";
+                                }
+                             //link 2 tax taking
+                              var tax2 = document.getElementById("tax2").value;
+                              var tax;
+                              if(tax2!=""){
+                                  if(tax2==0.15){
+                                         var taxcatch = +tax +(p2*qty2*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax2;
+                                     }
+                                 }
+                             //take postage 2
+                             var posprint2 = "";
+                             var pos2 = document.getElementById("pos2").value;
+                             if(pos2!=""){
+                                 var posprint2 = "\nPostage: £" + pos2;
+                             }
+                             var size2 = document.getElementById("size2").value;
+                             if(size2 != ""){ var sizeprint2 = "\n" + size2; }else { var sizeprint2 = "" }
+                             var color2 = document.getElementById("color2").value;
+                             if(color2 != ""){ var colorprint2 = "\n" + color2; }else { var colorprint2 = "" }
+                             
+                              var subtotalcatch = +subtotal + (+p2 * +qty2) + +pos2; 
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                         
+                             
+                             //link3 taking ======================================================================================
+                        var l3 = document.getElementById("link3").value;
+                             
+                        var qty3 = document.getElementById("qty3").value;
+                         if(l3!=""){
+                            var l3s = "Link3: ";
+                            var l3r = l3s.concat(l3);
+                         
+                             // link 3 link price
+                                var p3 = document.getElementById("price3").value;
+                                 if(p3!=""){
+                                     if(p3==0){
+                                        var p3r = "We can't get it!";
+                                     }else{
+                                   var p3s = "Price: £";
+                                   var p3r = p3s.concat(p3);
+                                     }
+                                }else{
+                                   var p3r="Price Not given";
+                                }
+                             //link 3 tax taking
+                              var tax3 = document.getElementById("tax3").value;
+                              var tax;
+                              if(tax3!=""){
+                                  if(tax3==0.15){
+                                         var taxcatch = +tax +(p3*qty3*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax3;
+                                     }
+                                 }
+                             //take postage 3
+                             var posprint3 = "";
+                             var pos3 = document.getElementById("pos3").value;
+                             if(pos3!=""){
+                                 var posprint3 = "\nPostage: £" + pos3;
+                             }
+                             
+                             var size3 = document.getElementById("size3").value;
+                             if(size3 != ""){ var sizeprint3 = "\n" + size3; }else { var sizeprint3 = "" }
+                             var color3 = document.getElementById("color3").value;
+                             if(color3 != ""){ var colorprint3 = "\n" + color3; }else { var colorprint3 = "" }
+                              var subtotalcatch = +subtotal + (+p3 * +qty3) + +pos3; 
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r +  posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 + "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                         
+                         //Taking link4==========================================================================================
+                             var l4 = document.getElementById("link4").value;
+                             
+                        var qty4 = document.getElementById("qty4").value;
+                         if(l4!=""){
+                            var l4s = "Link4: ";
+                            var l4r = l4s.concat(l4);
+                         
+                             // link 4 link price
+                                var p4 = document.getElementById("price4").value;
+                                 if(p4!=""){
+                                     if(p4==0){
+                                        var p4r = "We can't get it!";
+                                     }else{
+                                   var p4s = "Price: £";
+                                   var p4r = p4s.concat(p4);
+                                     }
+                                }else{
+                                   var p4r="Price Not given";
+                                }
+                             //link 4 tax taking
+                              var tax4 = document.getElementById("tax4").value;
+                              var tax;
+                              if(tax4!=""){
+                                  if(tax4==0.15){
+                                         var taxcatch = +tax +(p4*qty4*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax4;
+                                     }
+                                 }
+                             //take postage 4
+                             var posprint4 = "";
+                             var pos4 = document.getElementById("pos4").value;
+                             if(pos4!=""){
+                                 var posprint4 = "\nPostage: £" + pos4;
+                             }
+                             var size4 = document.getElementById("size4").value;
+                             if(size4 != ""){ var sizeprint4 = "\n" + size4; }else { var sizeprint4 = "" }
+                             var color4 = document.getElementById("color4").value;
+                             if(color4 != ""){ var colorprint4 = "\n" + color4; }else { var colorprint4 = "" }
+                              var subtotalcatch =  +subtotal + (+p4 * +qty4) + +pos4;
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 +  "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 +  "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 +  "\n\n" + l4r + sizeprint4 + colorprint4 + "\nQuantity: " + qty4 + "\n" + p4r + posprint4 +   "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                        
+                             //taking link 5 =============================================================================================
+                               var l5 = document.getElementById("link5").value;
+                             
+                        var qty5 = document.getElementById("qty5").value;
+                         if(l5!=""){
+                            var l5s = "Link5: ";
+                            var l5r = l5s.concat(l5);
+                         
+                             // link 5 link price
+                                var p5 = document.getElementById("price5").value;
+                                 if(p5!=""){
+                                     if(p5==0){
+                                        var p5r = "We can't get it!";
+                                     }else{
+                                   var p5s = "Price: £";
+                                   var p5r = p5s.concat(p5);
+                                     }
+                                }else{
+                                   var p5r="Price Not given";
+                                }
+                             //link 5 tax taking
+                              var tax5 = document.getElementById("tax5").value;
+                              var tax;
+                              if(tax5!=""){
+                                  if(tax5==0.15){
+                                         var taxcatch = +tax +(p5*qty5*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax5;
+                                     }
+                                 }
+                             //take postage 5
+                             var posprint5 = "";
+                             var pos5 = document.getElementById("pos5").value;
+                             if(pos5!=""){
+                                 var posprint5 = "\nPostage: £" + pos5;
+                             }
+                             
+                             var size5 = document.getElementById("size5").value;
+                             if(size5 != ""){ var sizeprint5 = "\n" + size5; }else { var sizeprint5 = "" }
+                             var color5 = document.getElementById("color5").value;
+                             if(color5 != ""){ var colorprint5 = "\n" + color5; }else { var colorprint5 = "" }
+                              var subtotalcatch = +subtotal + (+p5 * +qty5) + +pos5; 
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 + "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 + "\n\n" + l4r + sizeprint4 + colorprint4 + "\nQuantity: " + qty4 + "\n" + p4r + posprint4 +  "\n\n" + l5r + sizeprint5 + colorprint5 + "\nQuantity: " + qty5 + "\n" + p5r + posprint5 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                        
+                             //taking link 6============================================================================================
+                             var l6 = document.getElementById("link6").value;
+                             
+                        var qty6 = document.getElementById("qty6").value;
+                         if(l6!=""){
+                            var l6s = "Link6: ";
+                            var l6r = l6s.concat(l6);
+                         
+                             // link 6 link price
+                                var p6 = document.getElementById("price6").value;
+                                 if(p6!=""){
+                                     if(p6==0){
+                                        var p6r = "We can't get it!";
+                                     }else{
+                                   var p6s = "Price: £";
+                                   var p6r = p6s.concat(p6);
+                                     }
+                                }else{
+                                   var p6r="Price Not given";
+                                }
+                             //link 6 tax taking
+                              var tax6 = document.getElementById("tax6").value;
+                              var tax;
+                              if(tax6!=""){
+                                  if(tax6==0.15){
+                                         var taxcatch = +tax +(p6*qty6*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax6;
+                                     }
+                                 }
+                             
+                             //take postage 6
+                             var posprint6 = "";
+                             var pos6 = document.getElementById("pos6").value;
+                             if(pos6!=""){
+                                 var posprint6 = "\nPostage: £" + pos6;
+                             }
+                             var size6 = document.getElementById("size6").value;
+                             if(size6 != ""){ var sizeprint6 = "\n" + size6; }else { var sizeprint6 = "" }
+                             var color6 = document.getElementById("color6").value;
+                             if(color6 != ""){ var colorprint6 = "\n" + color6; }else { var colorprint6 = "" }
+                             
+                              var subtotalcatch =  +subtotal + (+p6 * +qty6) + +pos6;
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 + "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 + "\n\n" + l4r + sizeprint4 + colorprint4 + "\nQuantity: " + qty4 + "\n" + p4r + posprint4 +  "\n\n" + l5r + sizeprint5 + colorprint5 + "\nQuantity: " + qty5 + "\n" + p5r + posprint5 +   "\n\n" + l6r + sizeprint6 + colorprint6 + "\nQuantity: " + qty6 + "\n" + p6r + posprint6 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                        // Taking link 7 =========================================================================================
+                             var l7 = document.getElementById("link7").value;
+                             
+                        var qty7 = document.getElementById("qty7").value;
+                         if(l7!=""){
+                            var l7s = "Link7: ";
+                            var l7r = l7s.concat(l7);
+                         
+                             // link 7 link price
+                                var p7 = document.getElementById("price7").value;
+                                 if(p7!=""){
+                                     if(p7==0){
+                                        var p7r = "We can't get it!";
+                                     }else{
+                                   var p7s = "Price: £";
+                                   var p7r = p7s.concat(p7);
+                                     }
+                                }else{
+                                   var p7r="Price Not given";
+                                }
+                             //link 7 tax taking
+                              var tax7 = document.getElementById("tax7").value;
+                              var tax;
+                              if(tax7!=""){
+                                  if(tax7==0.15){
+                                         var taxcatch = +tax +(p7*qty7*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax7;
+                                     }
+                                 }
+                             
+                             //take postage 7
+                             var posprint7 = "";
+                             var pos7 = document.getElementById("pos7").value;
+                             if(pos7!=""){
+                                 var posprint7 = "\nPostage: £" + pos7;
+                             }
+                             var size7 = document.getElementById("size7").value;
+                             if(size7 != ""){ var sizeprint7 = "\n" + size7; }else { var sizeprint7 = "" }
+                             var color7 = document.getElementById("color7").value;
+                             if(color7 != ""){ var colorprint7 = "\n" + color7; }else { var colorprint7 = "" }
+                              var subtotalcatch = +subtotal + (+p7 * +qty7) + +pos7; 
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 + "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 + "\n\n" + l4r + sizeprint4 + colorprint4 + "\nQuantity: " + qty4 + "\n" + p4r + posprint4 +  "\n\n" + l5r + sizeprint5 + colorprint5 + "\nQuantity: " + qty5 + "\n" + p5r + posprint5 + "\n\n" + l6r + sizeprint6 + colorprint6 + "\nQuantity: " + qty6 + "\n" + p6r + posprint6 +  "\n\n" + l7r + sizeprint7 + colorprint7 + "\nQuantity: " + qty7 + "\n" + p7r + posprint7 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                             
+                         //link 8 taking ==========================================================================================
+                         var l8 = document.getElementById("link8").value;
+                             
+                        var qty8 = document.getElementById("qty8").value;
+                         if(l8!=""){
+                            var l8s = "Link8: ";
+                            var l8r = l8s.concat(l8);
+                         
+                             // link 8 link price
+                                var p8 = document.getElementById("price8").value;
+                                 if(p8!=""){
+                                     if(p8==0){
+                                        var p8r = "We can't get it!";
+                                     }else{
+                                   var p8s = "Price: £";
+                                   var p8r = p8s.concat(p8);
+                                     }
+                                }else{
+                                   var p8r="Price Not given";
+                                }
+                             //link 8 tax taking
+                              var tax8 = document.getElementById("tax8").value;
+                              var tax;
+                              if(tax8!=""){
+                                  if(tax8==0.15){
+                                         var taxcatch = +tax +(p8*qty8*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax8;
+                                     }
+                                 }
+                             //take postage 8
+                             var posprint8 = "";
+                             var pos8 = document.getElementById("pos8").value;
+                             if(pos8!=""){
+                                 var posprint8 = "\nPostage: £" + pos8;
+                             }
+                             var size8 = document.getElementById("size8").value;
+                             if(size8 != ""){ var sizeprint8 = "\n" + size8; }else { var sizeprint8 = "" }
+                             var color8 = document.getElementById("color8").value;
+                             if(color8 != ""){ var colorprint8 = "\n" + color8; }else { var colorprint8 = "" }
+                              var subtotalcatch = +subtotal + (+p8 * +qty8) + +pos8;
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 + "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 + "\n\n" + l4r + sizeprint4 + colorprint4 + "\nQuantity: " + qty4 + "\n" + p4r + posprint4 +  "\n\n" + l5r + sizeprint5 + colorprint5 + "\nQuantity: " + qty5 + "\n" + p5r + posprint5 + "\n\n" + l6r + sizeprint1 + colorprint6 + "\nQuantity: " + qty6 + "\n" + p6r + posprint6 +  "\n\n" + l7r + sizeprint7 + colorprint7 + "\nQuantity: " + qty7 + "\n" + p7r + posprint7 +  "\n\n" + l8r + sizeprint8 + colorprint8 + "\nQuantity: " + qty8 + "\n" + p8r + posprint8 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                             
+                             //link 9 taking =====================================================================================
+                             var l9 = document.getElementById("link9").value;
+                             
+                        var qty9 = document.getElementById("qty9").value;
+                         if(l9!=""){
+                            var l9s = "Link9: ";
+                            var l9r = l9s.concat(l9);
+                         
+                             // link 9 link price
+                                var p9 = document.getElementById("price9").value;
+                                 if(p9!=""){
+                                     if(p9==0){
+                                        var p9r = "We can't get it!";
+                                     }else{
+                                   var p9s = "Price: £";
+                                   var p9r = p9s.concat(p9);
+                                     }
+                                }else{
+                                   var p9r="Price Not given";
+                                }
+                             //link 9 tax taking
+                              var tax9 = document.getElementById("tax9").value;
+                              var tax;
+                              if(tax9!=""){
+                                  if(tax9==0.15){
+                                         var taxcatch = +tax +(p9*qty9*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax9;
+                                     }
+                                 }
+                             
+                             //take postage 9
+                             var posprint9 = "";
+                             var pos9 = document.getElementById("pos9").value;
+                             if(pos9!=""){
+                                 var posprint9 = "\nPostage: £" + pos9;
+                             }
+                             var size9 = document.getElementById("size9").value;
+                             if(size9 != ""){ var sizeprint9 = "\n" + size9; }else { var sizeprint9 = "" }
+                             var color9 = document.getElementById("color9").value;
+                             if(color9 != ""){ var colorprint9 = "\n" + color9; }else { var colorprint9 = "" }
+                             
+                              var subtotalcatch = +subtotal + (+p9 * +qty9) + +pos9;
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 + "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 + "\n\n" + l4r + sizeprint4 + colorprint4 + "\nQuantity: " + qty4 + "\n" + p4r + posprint4 +  "\n\n" + l5r + sizeprint5 + colorprint5 + "\nQuantity: " + qty5 + "\n" + p5r + posprint5 + "\n\n" + l6r + sizeprint6 + colorprint6 + "\nQuantity: " + qty6 + "\n" + p6r + posprint6 +  "\n\n" + l7r + sizeprint7 + colorprint7 + "\nQuantity: " + qty7 + "\n" + p7r + posprint7 +  "\n\n" + l8r + sizeprint8 + colorprint8 + "\nQuantity: " + qty8 + "\n" + p8r + posprint8 +  "\n\n" + l9r + sizeprint9 + colorprint9 + "\nQuantity: " + qty9 + "\n" + p9r + posprint9 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                             
+                             //link 10 taking =========================================================================================
+                             var l10 = document.getElementById("link10").value;
+                             
+                        var qty10 = document.getElementById("qty10").value;
+                         if(l10!=""){
+                            var l10s = "Link10: ";
+                            var l10r = l10s.concat(l10);
+                         
+                             // link 10 link price
+                                var p10 = document.getElementById("price10").value;
+                                 if(p10!=""){
+                                     if(p10==0){
+                                        var p10r = "We can't get it!";
+                                     }else{
+                                   var p10s = "Price: £";
+                                   var p10r = p10s.concat(p10);
+                                     }
+                                }else{
+                                   var p10r="Price Not given";
+                                }
+                             //link 10 tax taking
+                              var tax10 = document.getElementById("tax10").value;
+                              var tax;
+                              if(tax10!=""){
+                                  if(tax10==0.15){
+                                         var taxcatch = +tax +(p10*qty10*0.15*prate);
+                                         var tax = taxcatch.toFixed(2);
+                                     }else{
+                                         var tax = +tax + +tax10;
+                                     }
+                                 }
+                             //take postage 10
+                             var posprint10 = "";
+                             var pos10 = document.getElementById("pos10").value;
+                             if(pos10!=""){
+                                 var posprint10 = "\nPostage: £" + pos10;
+                             }
+                             var size10 = document.getElementById("size10").value;
+                             if(size10 != ""){ var sizeprint10 = "\n" + size10; }else { var sizeprint10 = "" }
+                             var color10 = document.getElementById("color10").value;
+                             if(color10 != ""){ var colorprint10 = "\n" + color10; }else { var colorprint10 = "" }
+                              var subtotalcatch = +subtotal + (+p10 * +qty10) + +pos10;
+                              var subtotal = subtotalcatch.toFixed(2);
+                              var subtkcatch = subtotal*prate;
+                              var subtk = subtkcatch.toFixed(2);
+
+                             var quote = l1r + sizeprint1 + colorprint1 + "\nQuantity: " + qty1 + "\n" + p1r + posprint1 + "\n\n" + l2r + sizeprint2 + colorprint2 + "\nQuantity: " + qty2 + "\n" + p2r + posprint2 + "\n\n" + l3r + sizeprint3 + colorprint3 + "\nQuantity: " + qty3 + "\n" + p3r + posprint3 + "\n\n" + l4r + sizeprint4 + colorprint4 + "\nQuantity: " + qty4 + "\n" + p4r + posprint4 +  "\n\n" + l5r + sizeprint5 + colorprint5 + "\nQuantity: " + qty5 + "\n" + p5r + posprint5 + "\n\n" + l6r + sizeprint6 + colorprint6 + "\nQuantity: " + qty6 + "\n" + p6r + posprint6 +  "\n\n" + l7r + sizeprint7 + colorprint7 + "\nQuantity: " + qty7 + "\n" + p7r + posprint7 +  "\n\n" + l8r + sizeprint8 + colorprint8 + "\nQuantity: " + qty8 + "\n" + p8r + posprint8 +  "\n\n" + l9r + sizeprint9 + colorprint9 + "\nQuantity: " + qty9 + "\n" + p9r + posprint9 +  "\n\n" + l10r + sizeprint10 + colorprint10 + "\nQuantity: " + qty10 + "\n" + p10r + posprint10 +  "\n\nSubtotal: £" + subtotal + " = Tk." + subtk + "\nCustom's Tax = Tk." + tax;
+                             
+                            
+                             
+                             
+                             //====================================================================================================
+                         } //till link 9 quote
+                         } //till link 8 quote
+                         } //till link 7 quote
+                         } //till link 6 quote
+                         } //till link 5 quote
+                         } //till link 4 quote
+                         } //till link 3 quote
+                         } //till link 2 quote
+                         } //link 1 quote give only
+                         
+                         
+                     
+                     
+                     
+                }else{
+                    var quote ="Link1 can not be empty!\nPlease add at least one link and price.";
+                }
+               
+
+                
+            document.getElementById("print").innerHTML = quote + "\n\nShipping Charge Tk.580/- per kg\nMinimum Shipping Charge Tk.580/-\nShipping Charge will be calculated on delivery\nExpected delivery in 9-14 days.\nDo you want to confirm this order?";
+            }
+        </script>
+        
+        
+    </body>
+</html>

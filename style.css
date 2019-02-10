@@ -1,0 +1,100 @@
+*{
+  outline: none;
+}
+
+.center{
+text-align:center;
+}
+
+.col-md-6{
+width:50%;
+float:left;
+}
+
+.col-md-12{
+width:99%
+}
+
+input[type=text]{
+  width: 160px;
+  padding: 5px 10px;
+  margin: 2px 10px 2px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number]{
+  width: 80px;
+  padding: 5px 10px;
+  margin: 2px 10px 2px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+select{
+  width: 100px;
+  padding: 5px 10px;
+  margin: 2px 10px 2px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+button {
+  width: 220px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  margin: 8px 100px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  width: 120px;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.yellow{
+  width: 140px;
+  background-color: yellow;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 100px;
+  border: none;
+  float: right;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #990000;
+}
+
+textarea{
+    text-align: left;
+    height:650px;
+    border:none;
+    background-color:#f1f1f1;
+}
